@@ -8,4 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  base:"https://oliver-gi.github.io/CloneAdventure",
 })

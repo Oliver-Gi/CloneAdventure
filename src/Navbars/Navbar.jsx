@@ -1,9 +1,7 @@
 import React from 'react'
-import { useState } from 'react'
 import './Navbar.css'
 
 const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(false);
 
     return (
         <nav className="bg-fuchsia-950 p-4">

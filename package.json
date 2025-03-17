@@ -1,8 +1,8 @@
 {
   "name": "cloneadventure",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
-  "homepage": "https://oliver-gi.github.io/cloneadventure",
+  "homepage": "https://oliver-gi.github.io/CloneAdventure",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
+    "@tailwindcss/typography": "^0.5.16",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
     "@vitejs/plugin-react": "^4.3.4",

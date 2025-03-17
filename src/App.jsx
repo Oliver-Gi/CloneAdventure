@@ -1,21 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React from 'react'
 import './App.css'
 import Navbar from './Navbars/Navbar'
+import Title from './Static/title'
+import Instructions from './Static/howToPlay'
+import Story from './Static/Story'
+import Game from './Static/game'
+import Version from './Static/versionNotes'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
+    <div>
     <Navbar/>
     {/*TITLE*/}
-    {/*HOW TO PLAY*/}
-    {/*STORY*/}
-    {/*GAME*/}
-    {/*VERSION NOTES*/}
-    </>
+    <Title/>
+    <Instructions/>
+    <Story/>
+    <div class="bg-fuchsia-950">
+      <Game/>
+    </div>
+    <Version/>
+    </div>
   )
 }
 
