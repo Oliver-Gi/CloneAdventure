@@ -1,18 +1,28 @@
-import '../App.css'
 import React from 'react'
+import { useState } from 'react'
+import "../App.css"
 
-const Version = () => {
+const Version = () =>{
+    const [open, setOpen] = useState(false)
+
+    const toggle = () => {
+        setOpen(!open);
+    }
+
     return(
         <div>
-            <h1 class="text-xl mt-5 text-center font-DP">
-                16/3/2025</h1>
-
-            <h2 class="text-l ml-5 text-left font-DP ">
-                This is currently the original form of this website. Each element is mapped out but holds no real content. I'm in the process of moving my code from 
-                a static HTML/CSS/JS website to this website (programmed with React and Tailwind).
-                <br/>
-                <strong>NEXT STEPS:</strong> Implement instructions and story tabs.
-            </h2>
+            <button onClick={toggle} class='m-[1rem] mb-[0px] w-[90vw] bg-fuchsia-950 text-white text-left border indent-[1rem] hover:text-[#e3c2fc]'>
+                Version Notes -&gt;
+            </button>
+            {
+            open && <div class='w-[90vw] mb-[5vh] mt-[0px] ml-[5vw] mt-[0px] bg-fuchsia-950/75 text-[#e3c2fc]'>
+                    <div>
+                        <div class="ml-[1rem] pb-[1vh]"> 
+                        <strong>17/03/2025</strong><br/><br/>
+                        Added functional instruction and story tabs that open on click/tap. Converted version notes section to an openable tab.
+                        </div>
+                    </div>
+            </div>}
         </div>
     )
 }
