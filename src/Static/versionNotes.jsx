@@ -20,6 +20,9 @@ const Version = () =>{
                         <div class="ml-[1rem] pb-[1vh]"> 
                         <strong>18/03/2025</strong><br/><br/>
                         Added background image to the game screen. Need to figure out how I will change it on button click.
+                        Designed start screen, added (not currently functional) start button and sprites.<br/><br/>
+                        <strong>NEXT STEPS:</strong><br/>
+                        Redraw sprites: Change skin tones to match Alexavier, change Ollie's colour scheme, redraw Luka (and maybe Ren).
                         </div>
                     </div>
             </div>}

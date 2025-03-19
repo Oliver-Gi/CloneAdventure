@@ -16,7 +16,7 @@ function App() {
     <Title/>
     <Instructions/>
     <Story/>
-    <div class="bg-fuchsia-950">
+    <div>
       <Game/>
     </div>
     <Version/>
