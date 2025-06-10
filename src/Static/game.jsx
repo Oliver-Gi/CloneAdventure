@@ -2,15 +2,18 @@ import '../App.css'
 import React from 'react'
 import { createContext, useContext, useState } from 'react';
 import StartScreen from '../GameScreens/startScreen';
+import DifficultySelect from '../GameScreens/difficultySelect';
 
 export const ScreenContext = createContext(null);
 
 const Game = () => {
     const [screen, setScreen] = useState('start')
     return(
-        <ScreenContext.Provider value={screen}>
-            {screen  === 'start' && <StartScreen/>}
-        </ScreenContext.Provider>
+        <div>
+            {screen  === 'start' && (
+                <StartScreen difficulty={() => setScreen('difficulty') } />)}
+            {screen  === 'difficulty' && <DifficultySelect/>}
+        </div>
     )
 }
 

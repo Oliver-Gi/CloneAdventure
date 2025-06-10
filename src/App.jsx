@@ -8,19 +8,18 @@ import Game from './Static/game'
 import Version from './Static/versionNotes'
 
 function App() {
-
   return (
-    <div className="overflow-x-hidden">
-    <Navbar/>
-    {/*TITLE*/}
-    <Title/>
-    <Instructions/>
-    <Story/>
-    <div>
-      <Game/>
-    </div>
-    <Version/>
-    </div>
+      <div className="overflow-x-hidden">
+      <Navbar/>
+      {/*TITLE*/}
+      <Title/>
+      <Instructions/>
+      <Story/>
+      <div>
+        <Game/>
+      </div>
+      <Version/>
+      </div>
   )
 }
 

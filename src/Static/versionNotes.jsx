@@ -18,11 +18,12 @@ const Version = () =>{
             open && <div class='w-[90vw] mb-[5vh] mt-[0px] ml-[5vw] mt-[0px] bg-fuchsia-950/75 text-[#e3c2fc]'>
                     <div>
                         <div class="ml-[1rem] pb-[1vh]"> 
-                        <strong>18/03/2025</strong><br/><br/>
-                        Added background image to the game screen. Need to figure out how I will change it on button click.
-                        Designed start screen, added (not currently functional) start button and sprites.<br/><br/>
+                        <strong>10/06/2025</strong><br/><br/>
+                        - Added new sprite designs.<br/>
+                        - Added functionality to start button (Switches screens but next screen is empty).
+                        <br/><br/>
                         <strong>NEXT STEPS:</strong><br/>
-                        Redraw sprites: Change skin tones to match Alexavier, change Ollie's colour scheme, redraw Luka (and maybe Ren).
+                        Implement difficulty selection.
                         </div>
                     </div>
             </div>}
