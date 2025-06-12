@@ -11,7 +11,7 @@ import difficultySelect from './difficultySelect';
 
 const StartScreen = (props) => {
     return(
-            <div class="bg-[url('../Resources/Backgrounds/startScreen.png')] bg-no-repeat bg-cover bg-center w-[80vw] h-[45vw] ml-[10vw]">
+            <div class="bg-[url('../Resources/Backgrounds/startScreen.png')] bg-no-repeat bg-cover bg-center w-[80vw] h-[45vw] ml-[10vw] mt-[1vw]">
                 <button class="mt-[0.5vw] ml-[20vw] w-[36vw] h-[8vw] bg-[#c5a8e7] text-[#311255]
                 rounded-sm border-[0.05rem] border-[#311255] text-[1rem]
                 sm:text-[1.75rem] sm:border-[0.1rem]

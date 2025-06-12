@@ -18,12 +18,13 @@ const Version = () =>{
             open && <div class='w-[90vw] mb-[5vh] mt-[0px] ml-[5vw] mt-[0px] bg-fuchsia-950/75 text-[#e3c2fc]'>
                     <div>
                         <div class="ml-[1rem] pb-[1vh]"> 
-                        <strong>10/06/2025</strong><br/><br/>
-                        - Added new sprite designs.<br/>
-                        - Added functionality to start button (Switches screens but next screen is empty).
+                        <strong>12/06/2025</strong><br/><br/>
+                        - Implemented difficulty page<br/>
+                        - Buttons will select difficulty (seen in an alert for now)<br/>
+                        - Back button moves you back to start screen
                         <br/><br/>
                         <strong>NEXT STEPS:</strong><br/>
-                        Implement difficulty selection.
+                        - Implement character screen
                         </div>
                     </div>
             </div>}
