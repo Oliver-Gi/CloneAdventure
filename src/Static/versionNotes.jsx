@@ -11,7 +11,12 @@ const Version = () =>{
 
     return(
         <div>
-            <button onClick={toggle} class='m-[1rem] mb-[0px] w-[90vw] bg-fuchsia-950 text-white text-left border indent-[1rem] hover:text-[#e3c2fc]'>
+            <button onClick={toggle} class='m-[1rem] mb-[1vw] h-[5vw] w-[90vw] bg-fuchsia-950 text-white text-left border indent-[1rem] hover:text-[#e3c2fc]
+                sm:text-[1.5rem]
+                md:text-[1.75rem]
+                lg:text-[2rem]
+                xl:text-[2.5rem]
+                2xl:text-[3rem]'>
                 Version Notes -&gt;
             </button>
             {
@@ -19,12 +24,17 @@ const Version = () =>{
                     <div>
                         <div class="ml-[1rem] pb-[1vh]"> 
                         <strong>12/06/2025</strong><br/><br/>
-                        - Implemented difficulty page<br/>
-                        - Buttons will select difficulty (seen in an alert for now)<br/>
-                        - Back button moves you back to start screen
+                        - Designed character description screen.<br/>
+                        - Buttons will redirect to information screens about their relative character in future.<br/>
+                        - Back button moves you back to difficulty screen.<br/>
+                        - Next button will move you to map screen in future.<br/>
+                        - Changed the information tabs to scale with screen size.<br/>
+                        - Fixed a UI bug that allowed the buttons on the difficulty screen to exceed background size.
                         <br/><br/>
                         <strong>NEXT STEPS:</strong><br/>
-                        - Implement character screen
+                        - Design and implement character information screens.<br/>
+                        - Make 'next' button change screen to relevant map screen.<br/>
+                        - Design and implement map screens.<br/>
                         </div>
                     </div>
             </div>}

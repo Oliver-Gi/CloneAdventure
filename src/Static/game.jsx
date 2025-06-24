@@ -3,6 +3,7 @@ import React from 'react'
 import { createContext, useContext, useState } from 'react';
 import StartScreen from '../GameScreens/startScreen';
 import DifficultySelect from '../GameScreens/difficultySelect';
+import CharacterScreen from '../GameScreens/characterScreen';
 
 export const ScreenContext = createContext(null);
 export var difficulty = 'easy';
@@ -17,22 +18,24 @@ const Game = () => {
                 <DifficultySelect   start={() => {setScreen('start') }}
                     easy={() => {
                         difficulty = 'easy';
-                        alert(difficulty);
+                        setScreen('character');
                     }}
                     normal={() => {
                         difficulty = 'normal';
-                        alert(difficulty);
+                        setScreen('character');
                     }}
                     hard={() => {
                         difficulty = 'hard';
-                        alert(difficulty);
+                        setScreen('character');
                     }}
                     insane={() => {
                         difficulty = 'insane';
-                        alert(difficulty);
+                        setScreen('character');
                     }}
                 />
             )}
+            {screen === 'character' && (
+                <CharacterScreen difficulty={() => setScreen('difficulty') }/>)}
         </div>
     )
 }

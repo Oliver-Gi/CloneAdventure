@@ -11,7 +11,12 @@ const Story = () =>{
 
     return(
         <div>
-            <button onClick={toggle} class='m-[1rem] mb-[0px] w-[90vw] bg-fuchsia-950 text-white text-left border indent-[1rem] hover:text-[#e3c2fc]'>
+            <button onClick={toggle} class='m-[1rem] mb-[0px] h-[5vw] w-[90vw] bg-fuchsia-950 text-white text-left border indent-[1rem] hover:text-[#e3c2fc]
+                sm:text-[1.5rem]
+                md:text-[1.75rem]
+                lg:text-[2rem]
+                xl:text-[2.5rem]
+                2xl:text-[3rem]'>
                 Story -&gt;
             </button>
             {
